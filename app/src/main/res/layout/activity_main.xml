@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/hackclubImageHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_centerHorizontal="true"
+            android:maxHeight="140dp"
+            android:maxWidth="140dp"
+            android:src="@drawable/flag_orpheus_top"/>
+
+        <TextView
+            android:id="@+id/descriptionHeadTextHome"
+            android:layout_below="@id/hackclubImageHome"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hack Club SIT"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/descriptionTextHome"
+            android:layout_below="@id/descriptionHeadTextHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:text="A club full of coding and development related stuffs. Whether you are a beginner in programming, have intermediate knowledge on projects building and open source or you’re a competitive coder, this club is for you."
+            />
+
+        <ImageView
+            android:id="@+id/hackclubImageHome2"
+            android:layout_below="@id/descriptionTextHome"
+            android:layout_centerHorizontal="true"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:paddingTop="15dp"
+            android:src="@drawable/logo"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>
