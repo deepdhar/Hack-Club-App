@@ -52,9 +52,18 @@
             android:layout_centerHorizontal="true"
             android:layout_width="300dp"
             android:layout_height="300dp"
-            android:paddingTop="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
             android:src="@drawable/logo"/>
 
+        <Button
+            android:id="@+id/homeButton1"
+            android:layout_below="@id/hackclubImageHome2"
+            android:layout_centerHorizontal="true"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="View Members"
+            android:textAllCaps="false"/>
 
     </RelativeLayout>
 
