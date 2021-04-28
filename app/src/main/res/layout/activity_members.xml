@@ -26,8 +26,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_marginHorizontal="0dp"
-        android:layout_marginVertical="8dp"
-        android:background="#DBDBDB"/>
+        android:paddingHorizontal="10dp"
+        android:paddingBottom="10dp"
+        android:background="#F4A460"/>
 
 </RelativeLayout>
