@@ -19,18 +19,6 @@ public class MembersActivity extends AppCompatActivity {
         setContentView(R.layout.activity_members);
         getSupportActionBar().hide();
 
-//        ArrayList<Members> members = new ArrayList<Members>();
-//
-//        // add members here
-//        members.add(new Members("Deep Dhar", "Leader", R.drawable.sample_image));
-//        members.add(new Members("Nivedita Prasad", "Co-Lead", R.drawable.nivi_sample));
-//        members.add(new Members("Alok Kumar Sah", "Co-Lead", R.drawable.alokx_sample));
-//
-//        MembersAdapter adapter = new MembersAdapter(MembersActivity.this, members);
-//        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.membersRecyclerView);
-//        recyclerView.setAdapter(adapter);
-
-
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.membersRecyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
