@@ -45,7 +45,7 @@
                     android:layout_height="wrap_content"
                     android:text="Deep Dhar"
                     android:textSize="18sp"
-                    android:fontFamily="sans-serif-condensed-medium"
+                    android:fontFamily="sans-serif-medium"
                     android:textColor="@color/black"/>
 
                 <TextView
