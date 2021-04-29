@@ -51,13 +51,36 @@ public class MembersAdapter extends RecyclerView.Adapter<MembersAdapter.ViewHold
         holder.textViewDesc.setText(membersList.getDesc());
         holder.memberImage.setImageResource(membersList.getImageResourceId());
 
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
+        //opens LinkedIn
+        holder.linkedinImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String url = membersList.getLinkedInUrl();
                 Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 context.startActivity(i);
-                Toast.makeText(context, membersList.getName(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "LinkedIn", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        //opens GitHub
+        holder.githubImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String url = "https://github.com/" + membersList.getGithubUsername();
+                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                context.startActivity(i);
+                Toast.makeText(context, "GitHub", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        //opens Twitter
+        holder.twitterImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String url = "https://twitter.com/" + membersList.getTwitterUsername();
+                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                context.startActivity(i);
+                Toast.makeText(context, "Twitter", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -71,12 +94,18 @@ public class MembersAdapter extends RecyclerView.Adapter<MembersAdapter.ViewHold
         ImageView memberImage;
         TextView textViewName;
         TextView textViewDesc;
+        ImageView linkedinImage;
+        ImageView githubImage;
+        ImageView twitterImage;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             memberImage = itemView.findViewById(R.id.memberDpImageView);
             textViewName = itemView.findViewById(R.id.memberNameTextView);
             textViewDesc = itemView.findViewById(R.id.memberDescTextView);
+            linkedinImage = itemView.findViewById(R.id.linkedinImageview);
+            githubImage = itemView.findViewById(R.id.githubImageview);
+            twitterImage = itemView.findViewById(R.id.twitterImageview);
         }
     }
 }
