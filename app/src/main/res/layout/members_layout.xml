@@ -1,43 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tool="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+<!--<LinearLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tool="http://schemas.android.com/tools"-->
+<!--    android:orientation="vertical"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content">-->
+
 
     <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tool="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
-        app:cardElevation="12dp"
+        android:layout_height="wrap_content"
+        app:cardElevation="15dp"
         app:cardCornerRadius="10dp"
-        android:layout_marginHorizontal="18dp"
-        android:layout_marginVertical="8dp">
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="18dp">
 
         <LinearLayout
             android:id="@+id/taskRelativeLayout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:orientation="horizontal">
+            android:layout_height="350dp"
+            android:background="#ff9f59"
+            android:gravity="center"
+            android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/memberDpImageView"
-                android:layout_width="100dp"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="3"
                 android:layout_gravity="center"
                 android:src="@drawable/sample_image"
-                android:layout_marginLeft="10dp" />
+                android:scaleType="centerCrop"/>
 
             <LinearLayout
-                android:id="@+id/tv_main_layout"
+                android:id="@+id/main_layout"
                 android:layout_toRightOf="@id/memberDpImageView"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:padding="16dp">
+                android:padding="18dp"
+                android:background="@color/white"
+                android:backgroundTint="@color/white">
 
                 <TextView
                     android:id="@+id/memberNameTextView"
@@ -64,5 +73,5 @@
 
     </androidx.cardview.widget.CardView>
 
-</LinearLayout>
+<!--</LinearLayout>-->
 
