@@ -55,7 +55,7 @@ public class MembersAdapter extends RecyclerView.Adapter<MembersAdapter.ViewHold
         holder.linkedinImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String url = membersList.getLinkedInUrl();
+                String url = "https://www.linkedin.com/in/" + membersList.getLinkedInUrl();
                 Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 context.startActivity(i);
                 Toast.makeText(context, "LinkedIn", Toast.LENGTH_SHORT).show();

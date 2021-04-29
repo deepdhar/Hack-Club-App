@@ -15,14 +15,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardElevation="15dp"
-        app:cardCornerRadius="10dp"
+        app:cardCornerRadius="18dp"
         android:layout_marginVertical="8dp"
         android:layout_marginHorizontal="18dp">
 
         <LinearLayout
             android:id="@+id/taskRelativeLayout"
             android:layout_width="match_parent"
-            android:layout_height="350dp"
+            android:layout_height="340dp"
             android:background="#ff9f59"
             android:gravity="center"
             android:orientation="vertical">
