@@ -41,24 +41,25 @@
 
                 <TextView
                     android:id="@+id/descriptionHeadTextHome"
-                    android:textAlignment="center"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Hack Club SIT"
+                    android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:textSize="16sp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/descriptionTextHome"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text='"A club full of coding and development related stuffs. Whether you are a beginner in programming, have intermediate knowledge on projects building and open source or you’re a competitive coder, this club is for you".'
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="14sp"
-                    android:layout_marginRight="5dp"
-                    android:layout_marginLeft="5dp"
-                    android:text="A club full of coding and development related stuffs. Whether you are a beginner in programming, have intermediate knowledge on projects building and open source or you’re a competitive coder, this club is for you." />
+                    android:textStyle="italic" />
 
             </LinearLayout>
 
@@ -74,14 +75,14 @@
 
         <Button
             android:id="@+id/homeButton1"
-            android:layout_below="@id/hackclubImageHome2"
-            android:layout_centerHorizontal="true"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="View Members"
+            android:layout_below="@id/hackclubImageHome2"
+            android:layout_centerHorizontal="true"
             android:layout_gravity="center"
             android:backgroundTint="#fe9141"
-            android:textAllCaps="false"/>
+            android:text="View Members"
+            android:textAllCaps="false" />
 
     </LinearLayout>
 
