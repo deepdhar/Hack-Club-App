@@ -42,30 +42,70 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="vertical"
+                android:orientation="horizontal"
                 android:gravity="center"
                 android:padding="18dp"
                 android:background="@color/white"
                 android:backgroundTint="@color/white">
 
-                <TextView
-                    android:id="@+id/memberNameTextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Deep Dhar"
-                    android:textSize="18sp"
-                    android:fontFamily="sans-serif-medium"
-                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/memberDescTextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Leader"
-                    android:textSize="14sp"
-                    android:fontFamily="sans-serif"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/darker_gray"/>
+                    <TextView
+                        android:id="@+id/memberNameTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Deep Dhar"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/memberDescTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leader"
+                        android:textSize="13sp"
+                        android:fontFamily="sans-serif"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/darker_gray"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/linkedinImageview"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/linkedin_icon"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"/>
+
+                    <ImageView
+                        android:id="@+id/githubImageview"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/github_icon"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toLeftOf="@id/linkedinImageview"
+                        android:layout_marginHorizontal="15dp"/>
+
+                    <ImageView
+                        android:id="@+id/twitterImageview"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/twitter_icon"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toLeftOf="@id/githubImageview"/>
+
+                </RelativeLayout>
 
             </LinearLayout>
 
