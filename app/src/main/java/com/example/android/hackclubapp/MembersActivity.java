@@ -28,7 +28,7 @@ public class MembersActivity extends AppCompatActivity {
                 new Members("Deep Dhar", "Leader", R.drawable.sample_image, "https://www.linkedin.com/in/deep-dhar/", "deepdhar", "deepdhar2000"),
                 new Members("Nivedita Prasad", "Co-Lead", R.drawable.nivi_sample, "https://www.linkedin.com/in/nivedita-prasad-706719194/", "Nivedita-coder", "NiveditaPrasa15"),
                 new Members("Alok Kumar Sah", "Co-Lead", R.drawable.alokx_sample, "https://www.linkedin.com/in/alok-kumar-987b4b190/", "alokkumax", "alokkumax"),
-                new Members("Soumwadeep Guha.", "Core Team Member", R.drawable.soumwadeep_sample, "https://www.linkedin.com/in/soumwadeep-guha-5b60031bb/", "soumwadeep", "soumwadeep"),
+                new Members("Soumwadeep Guha", "Core Team Member", R.drawable.soumwadeep_sample, "https://www.linkedin.com/in/soumwadeep-guha-5b60031bb/", "soumwadeep", "soumwadeep"),
         };
 
         MembersAdapter adapter = new MembersAdapter(members, MembersActivity.this);
