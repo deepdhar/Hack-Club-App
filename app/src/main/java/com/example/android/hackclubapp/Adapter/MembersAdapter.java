@@ -1,13 +1,11 @@
 package com.example.android.hackclubapp.Adapter;
 
-import android.content.ContentProvider;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -55,7 +53,7 @@ public class MembersAdapter extends RecyclerView.Adapter<MembersAdapter.ViewHold
         holder.linkedinImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String url = membersList.getLinkedInUrl();
+                String url = "https://www.linkedin.com/in/" + membersList.getLinkedInUrl();
                 Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 context.startActivity(i);
                 Toast.makeText(context, "LinkedIn", Toast.LENGTH_SHORT).show();
