@@ -6,7 +6,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="15dp"
+    android:paddingBottom="15dp"
+    android:paddingHorizontal="15dp"
     tool:context=".MainActivity"
     android:background="@drawable/bg1">
 
@@ -37,7 +38,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_margin="10dp">
+                android:layout_margin="14dp">
 
                 <TextView
                     android:id="@+id/descriptionHeadTextHome"
