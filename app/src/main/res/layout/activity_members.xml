@@ -4,20 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MembersActivity">
+    tools:context=".MembersActivity"
+    android:background="@drawable/bg2top">
 
     <TextView
         android:id="@+id/membersText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Club Members"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         android:textStyle="italic"
         android:fontFamily="sans-serif-medium"
-        android:textSize="22sp"
+        android:textSize="20sp"
         android:layout_centerHorizontal="true"/>
 
     <androidx.recyclerview.widget.RecyclerView
@@ -27,7 +28,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:paddingHorizontal="10dp"
-        android:paddingVertical="15dp"
-        android:background="@drawable/bg1"/>
+        android:paddingTop="30dp"
+        android:background="@drawable/bg2"/>
 
 </RelativeLayout>
