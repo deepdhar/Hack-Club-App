@@ -14,8 +14,6 @@
         android:id="@+id/taskRelativeLayout"
         android:layout_width="match_parent"
         android:layout_height="350dp"
-        android:background="#ff9f59"
-        android:gravity="center"
         android:orientation="vertical">
 
         <ImageView

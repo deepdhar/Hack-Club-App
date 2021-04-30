@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">HackClubApp</string>
+    <string name="app_name">Hack Club App</string>
+    <string name="home_description">"A club full of coding and development related stuffs. Whether you are a beginner in programming, have intermediate knowledge on projects building and open source or you’re a competitive coder, this club is for you"</string>
 </resources>
