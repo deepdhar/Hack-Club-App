@@ -1,5 +1,6 @@
 package com.example.android.hackclubapp.Adapter;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -11,8 +12,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.android.hackclubapp.HomeFragment;
 import com.example.android.hackclubapp.MainActivity;
 import com.example.android.hackclubapp.R;
 import com.example.android.hackclubapp.Videos;
@@ -20,11 +23,11 @@ import com.example.android.hackclubapp.Videos;
 public class VideosAdapter extends RecyclerView.Adapter<VideosAdapter.ViewHolder> {
 
     Videos[] videos;
-    Context context;
+    Context mContext;
 
-    public VideosAdapter(Videos[] videos, MainActivity activity) {
+    public VideosAdapter(Videos[] videos, Context mContext) {
         this.videos = videos;
-        this.context = activity;
+        this.mContext = mContext;
     }
 
 
@@ -48,8 +51,7 @@ public class VideosAdapter extends RecyclerView.Adapter<VideosAdapter.ViewHolder
             public void onClick(View view) {
                 String url = videoList.getVideoUrl();
                 Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-                context.startActivity(i);
-                Toast.makeText(context, "Opening Youtube", Toast.LENGTH_SHORT).show();
+                mContext.startActivity(i);
             }
         });
 

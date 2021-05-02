@@ -13,24 +13,17 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.android.hackclubapp.MainActivity;
 import com.example.android.hackclubapp.Members;
-import com.example.android.hackclubapp.MembersActivity;
 import com.example.android.hackclubapp.R;
-
-import org.w3c.dom.Text;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class MembersAdapter extends RecyclerView.Adapter<MembersAdapter.ViewHolder> {
 
     Members[] members;
-    Context context;
+    Context mContext;
 
-    public MembersAdapter(Members[] members, MembersActivity activity) {
+    public MembersAdapter(Members[] members, Context mContext) {
         this.members = members;
-        this.context = activity;
+        this.mContext = mContext;
     }
 
     @NonNull
@@ -55,8 +48,8 @@ public class MembersAdapter extends RecyclerView.Adapter<MembersAdapter.ViewHold
             public void onClick(View view) {
                 String url = "https://www.linkedin.com/in/" + membersList.getLinkedInUrl();
                 Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-                context.startActivity(i);
-                Toast.makeText(context, "LinkedIn", Toast.LENGTH_SHORT).show();
+                mContext.startActivity(i);
+                Toast.makeText(mContext, "LinkedIn", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -66,8 +59,8 @@ public class MembersAdapter extends RecyclerView.Adapter<MembersAdapter.ViewHold
             public void onClick(View view) {
                 String url = "https://github.com/" + membersList.getGithubUsername();
                 Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-                context.startActivity(i);
-                Toast.makeText(context, "GitHub", Toast.LENGTH_SHORT).show();
+                mContext.startActivity(i);
+                Toast.makeText(mContext, "GitHub", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -77,8 +70,8 @@ public class MembersAdapter extends RecyclerView.Adapter<MembersAdapter.ViewHold
             public void onClick(View view) {
                 String url = "https://twitter.com/" + membersList.getTwitterUsername();
                 Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-                context.startActivity(i);
-                Toast.makeText(context, "Twitter", Toast.LENGTH_SHORT).show();
+                mContext.startActivity(i);
+                Toast.makeText(mContext, "Twitter", Toast.LENGTH_SHORT).show();
             }
         });
     }
