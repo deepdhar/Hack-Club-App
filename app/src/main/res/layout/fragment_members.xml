@@ -27,7 +27,11 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:paddingHorizontal="10dp"
-        android:paddingTop="50dp"
+        android:paddingTop="40dp"
         android:background="@drawable/bg2"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="12dp"/>
 
 </RelativeLayout>
