@@ -1,5 +1,7 @@
 package com.example.android.hackclubapp;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,6 +23,7 @@ public class HomeFragment extends Fragment {
     ScrollView myScrollView;
     RecyclerView recyclerView;
     View v;
+    Button joinButton;
 
     @Nullable
     @Override
@@ -34,6 +37,16 @@ public class HomeFragment extends Fragment {
 
         recyclerView = v.findViewById(R.id.homeRecyclerview);
         recyclerView.setHasFixedSize(true);
+
+        joinButton = v.findViewById(R.id.join_now_button);
+        joinButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String url = "https://discord.gg/R2N3CJxHHe";
+                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                startActivity(i);
+            }
+        });
 
         Videos videos[] = new Videos[] {
                 new Videos("Intro to Engineering", R.drawable.intro_to_engg, "https://www.youtube.com/watch?v=qjctMXhyQNk&t=433s"),

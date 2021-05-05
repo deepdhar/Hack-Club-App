@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                     selectedFragment = new MembersFragment();
                     break;
 
-                case R.id.youtube:
+                case R.id.events:
                     selectedFragment = new EventsFragment();
                     break;
             }

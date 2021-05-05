@@ -30,7 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/sayantani_sarkar"
+                android:src="@drawable/deep_dhar"
                 android:scaleType="centerCrop" />
 
         </androidx.cardview.widget.CardView>

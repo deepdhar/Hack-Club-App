@@ -9,8 +9,8 @@
         android:icon="@drawable/ic_members"
         android:title="Members"/>
 
-    <item android:id="@+id/youtube"
-        android:icon="@drawable/ic_youtube"
+    <item android:id="@+id/events"
+        android:icon="@drawable/ic_event"
         android:title="Events"/>
 
 </menu>
