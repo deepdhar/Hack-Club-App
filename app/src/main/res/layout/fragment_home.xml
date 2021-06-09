@@ -30,6 +30,7 @@
             android:layout_marginHorizontal="25dp"
             android:layout_marginTop="40dp"
             app:cardCornerRadius="12dp"
+            android:backgroundTint="@color/white"
             app:cardElevation="18dp">
 
             <LinearLayout

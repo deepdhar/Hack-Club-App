@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tool="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardElevation="15dp"
-    app:cardCornerRadius="10dp"
-    android:layout_marginBottom="18dp"
     android:layout_marginHorizontal="20dp"
-    android:layout_marginTop="10dp">
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="18dp"
+    android:backgroundTint="@color/white"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="15dp">
 
     <LinearLayout
         android:id="@+id/taskRelativeLayout"
@@ -20,18 +20,18 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_margin="10dp"
             android:layout_weight="4"
             app:cardCornerRadius="10dp"
-            app:cardElevation="15dp"
-            android:layout_margin="10dp">
+            app:cardElevation="15dp">
 
             <ImageView
                 android:id="@+id/memberDpImageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/deep_dhar"
-                android:scaleType="centerCrop" />
+                android:scaleType="centerCrop"
+                android:src="@drawable/deep_dhar" />
 
         </androidx.cardview.widget.CardView>
 
@@ -40,12 +40,12 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:paddingHorizontal="15dp"
-            android:paddingTop="8dp"
             android:background="@color/white"
-            android:backgroundTint="@color/white">
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="15dp"
+            android:paddingTop="8dp">
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -57,20 +57,20 @@
                     android:id="@+id/memberNameTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Deep Dhar"
-                    android:textSize="15sp"
                     android:fontFamily="sans-serif-medium"
-                    android:textColor="@color/black"/>
+                    android:text="Deep Dhar"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
 
                 <TextView
                     android:id="@+id/memberDescTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Leader"
-                    android:textSize="13sp"
                     android:fontFamily="sans-serif"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/darker_gray"/>
+                    android:text="Leader"
+                    android:textColor="#858585"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -83,26 +83,26 @@
                     android:id="@+id/linkedinImageview"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/linkedin_icon"
                     android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"/>
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/linkedin_icon" />
 
                 <ImageView
                     android:id="@+id/githubImageview"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/github_icon"
                     android:layout_alignParentTop="true"
+                    android:layout_marginHorizontal="15dp"
                     android:layout_toLeftOf="@id/linkedinImageview"
-                    android:layout_marginHorizontal="15dp"/>
+                    android:src="@drawable/github_icon" />
 
                 <ImageView
                     android:id="@+id/twitterImageview"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/twitter_icon"
                     android:layout_alignParentTop="true"
-                    android:layout_toLeftOf="@id/githubImageview"/>
+                    android:layout_toLeftOf="@id/githubImageview"
+                    android:src="@drawable/twitter_icon" />
 
             </RelativeLayout>
 

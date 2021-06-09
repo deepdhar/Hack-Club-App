@@ -1,6 +1,5 @@
 package com.example.android.hackclubapp.Adapter;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -23,11 +22,11 @@ import com.example.android.hackclubapp.Videos;
 public class VideosAdapter extends RecyclerView.Adapter<VideosAdapter.ViewHolder> {
 
     Videos[] videos;
-    Context mContext;
+    Context context;
 
-    public VideosAdapter(Videos[] videos, Context mContext) {
+    public VideosAdapter(Videos[] videos, Context context) {
         this.videos = videos;
-        this.mContext = mContext;
+        this.context = context;
     }
 
 
@@ -51,7 +50,7 @@ public class VideosAdapter extends RecyclerView.Adapter<VideosAdapter.ViewHolder
             public void onClick(View view) {
                 String url = videoList.getVideoUrl();
                 Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-                mContext.startActivity(i);
+                context.startActivity(i);
             }
         });
 
@@ -59,7 +58,7 @@ public class VideosAdapter extends RecyclerView.Adapter<VideosAdapter.ViewHolder
 
     @Override
     public int getItemCount() {
-        return videos.length;
+            return videos.length;
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {

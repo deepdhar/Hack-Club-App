@@ -33,7 +33,7 @@ public class MembersFragment extends Fragment {
                 new Members("Nivedita Prasad", "Co-Lead", R.drawable.nivi_sample, "nivedita-prasad-706719194/", "Nivedita-coder", "NiveditaPrasa15"),
                 new Members("Alok Kumar Sah", "Co-Lead", R.drawable.alokx_sample, "alok-kumar-987b4b190/", "alokkumax", "alokkumax"),
                 new Members("Debajit Mallick", "Core Team Member", R.drawable.debajit_mallick, "debajit-mallick/", "debajit13", "mallickdebajit"),
-                new Members("Subhrnail Sarkar", "Core Team Member", R.drawable.subhranil_sample, "subhranil-sarkar/", "", ""),
+                new Members("Subhranil Sarkar", "Core Team Member", R.drawable.subhranil_sample, "subhranil-sarkar/", "", ""),
                 new Members("Sayantani Deb", "Core Team Member", R.drawable.sayantani_deb, "sayantani-deb-035794200/", "SayantaniDeb", "SayantaniDeb2"),
                 new Members("Soumwadeep Guha", "Core Team Member", R.drawable.soumwadeep_sample, "soumwadeep-guha-5b60031bb/", "soumwadeep", "soumwadeep"),
                 new Members("Abhilasha Gupta", "Core Team Member", R.drawable.abhilasha_gupta, "abhilasha-gupta-829ba7190/", "AbhilashaGupta16", "Abhilasha_4sq"),

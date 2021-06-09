@@ -2,9 +2,9 @@ package com.example.android.hackclubapp;
 
 public class Videos {
 
-    public String mVideoDesc;
-    public int mVideoImageResourceId;
-    public String mVideoUrl;
+    private String mVideoDesc;
+    private int mVideoImageResourceId;
+    private String mVideoUrl;
 
     public Videos(String videoDesc, int videoImageResourceId, String videoUrl) {
         mVideoDesc = videoDesc;

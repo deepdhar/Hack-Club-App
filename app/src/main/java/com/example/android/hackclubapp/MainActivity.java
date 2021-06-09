@@ -15,11 +15,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button button1;
-    ScrollView myScrollView;
-    RecyclerView recyclerView;
     BottomNavigationView bottomNavigationView;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +28,6 @@ public class MainActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
 
     }
-
-
 
     private BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
         @Override
